@@ -29,5 +29,5 @@ It uses **MediaPipe** for hand tracking and **PyAutoGUI** for controlling the mo
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/virtual-mouse-controller.git
+git clone https://github.com/Citradev/virtual-mouse-controller.git
 cd virtual-mouse-controller
