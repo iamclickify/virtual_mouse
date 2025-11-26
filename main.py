@@ -8,7 +8,7 @@ import os
 import time
 
 # ======================
-# 🗣️ Voice Setup
+#  Voice Setup
 # ======================
 r = sr.Recognizer()
 engine = pyttsx3.init()
@@ -20,7 +20,7 @@ def speak(text):
     engine.runAndWait()
 
 # ======================
-# ✋ Hand Gesture Config
+#  Hand Gesture Config
 # ======================
 W_CAM, H_CAM = 640, 480
 FRAME_REDUCTION = 100
@@ -35,7 +35,7 @@ prev_x = 0
 gesture_cooldown = 0  # To avoid multiple slide turns per swipe
 
 # ======================
-# 🎤 Voice Command
+#  Voice Command
 # ======================
 def listen_for_presentation():
     """Waits for user to say 'open presentation' or 'open PowerPoint'."""
@@ -62,10 +62,10 @@ def listen_for_presentation():
             break
 
 # ======================
-# 📽️ Open PowerPoint
+#  Open PowerPoint
 # ======================
 def open_ppt():
-    ppt_path = r"C:\Users\Public\Documents\presentation.pptx"  # 🔧 Change this path
+    ppt_path = r"C:\Users\admin\OneDrive\Documents\presentation.pptx"  
     if os.path.exists(ppt_path):
         os.startfile(ppt_path)
         speak("Opening your presentation.")
@@ -77,7 +77,7 @@ def open_ppt():
         return False
 
 # ======================
-# ✋ Gesture Controller
+#  Gesture Controller
 # ======================
 def gesture_control():
     """Detects left and right hand movements to change slides."""
@@ -128,9 +128,7 @@ def gesture_control():
     cv2.destroyAllWindows()
     speak("Gesture control stopped.")
 
-# ======================
-# 🚀 Main Program
-# ======================
+
 if __name__ == "__main__":
     speak("Hello! I am your presentation assistant.")
     if listen_for_presentation():
