@@ -65,7 +65,7 @@ def listen_for_presentation():
 #  Open PowerPoint
 # ======================
 def open_ppt():
-    ppt_path = r"C:\Users\admin\OneDrive\Documents\presentation.pptx"  
+    ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"  
     if os.path.exists(ppt_path):
         os.startfile(ppt_path)
         speak("Opening your presentation.")
@@ -136,3 +136,4 @@ if __name__ == "__main__":
             gesture_control()
         else:
             speak("Unable to start presentation mode.")
+
