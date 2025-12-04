@@ -6,12 +6,10 @@ It uses **MediaPipe** for hand tracking and **PyAutoGUI** for controlling the mo
 ---
 
 ## 🚀 Features
-
-- Move the mouse pointer by moving your **index finger**.
-- Perform **left click** using **thumb + index pinch gesture**.
-- Perform **right click** using **thumb + middle finger pinch gesture**.
-- Smooth pointer movement and reduced accidental clicks using a **state machine** and **distance thresholds**.
-- Adjustable sensitivity and frame reduction area.
+- 🎤 **Voice Activation** — Say **"open presentation"** to launch your PPT.
+- ✋ **Hand Gesture Slide Control** — Swipe **right** ➡️ next slide, swipe **left** ⬅️ previous slide.
+- 💬 **Voice Feedback** — System speaks out every action.
+- 📹 **Real-Time Hand Tracking** using MediaPipe.
 
 ---
 
@@ -31,3 +29,11 @@ It uses **MediaPipe** for hand tracking and **PyAutoGUI** for controlling the mo
 ```bash
 git clone https://github.com/Citradev/virtual-mouse-controller.git
 cd virtual-mouse-controller
+## 📦 Installation
+
+```bash
+pip install opencv-python mediapipe pyautogui SpeechRecognition pyttsx3 numpy
+```
+Make sure to change ppt path!
+ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"
+
