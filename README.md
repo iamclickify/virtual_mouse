@@ -1,39 +1,76 @@
-# Virtual Mouse Controller using Hand Gestures 🖐️
+# Virtual Mouse using Hand Gestures
 
-This project allows you to **control your computer’s mouse using hand gestures** through a webcam.  
-It uses **MediaPipe** for hand tracking and **PyAutoGUI** for controlling the mouse cursor and performing click actions.
+Control your computer without touching a mouse!
 
----
-
-## 🚀 Features
-- 🎤 **Voice Activation** — Say **"open presentation"** to launch your PPT.
-- ✋ **Hand Gesture Slide Control** — Swipe **right** ➡️ next slide, swipe **left** ⬅️ previous slide.
-- 💬 **Voice Feedback** — System speaks out every action.
-- 📹 **Real-Time Hand Tracking** using MediaPipe.
+This project uses computer vision to track hand movements in real-time and converts them into mouse actions like cursor movement and clicks.
 
 ---
 
-## 🧠 Tech Stack
-
-- **Python 3.8+**
-- **OpenCV** – for real-time webcam input and visualization  
-- **MediaPipe** – for hand and finger landmark detection  
-- **PyAutoGUI** – for mouse cursor movement and click events  
-- **NumPy** – for numerical operations  
+## 📌 Features
+- 🖐️ Real-time hand tracking
+- 🖱️ Move cursor using finger movement
+- 👆 Perform click actions using gestures
+- ⚡ Smooth and responsive interaction
 
 ---
 
-## ⚙️ Installation
+## 🧠 How it Works
+- Uses a webcam to capture live video feed
+- Detects hand landmarks using a hand tracking model
+- Maps finger positions to screen coordinates
+- Recognizes specific gestures for actions like clicking
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/Citradev/virtual-mouse-controller.git
-cd virtual-mouse-controller
-## 📦 Installation
+---
 
-```bash
-pip install opencv-python mediapipe pyautogui SpeechRecognition pyttsx3 numpy
-```
+## ⚙️ Tech Stack
+- Python
+- OpenCV
+- MediaPipe
+- PyAutoGUI
+
+---
+
+## 🎥 Demo
+(Add a short demo video or GIF here)
+
+---
+
+## 🚧 Challenges Faced
+- Mapping camera coordinates to screen space accurately
+- Reducing jitter for smoother cursor movement
+- Handling different lighting conditions for reliable detection
+
+---
+
+## 🚀 Future Improvements
+- Add gesture-based volume/brightness control
+- Improve tracking accuracy
+- Add multi-hand support
+- Build a small UI overlay for better feedback
+
+---
+
+## 📂 How to Run
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   pip install opencv-python mediapipe pyautogui
+   ```
+3. Run the script:
+   ```bash
+   python main.py
+   ```
+
+---
 Make sure to change ppt path!
 ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"
 
+## 💡 Learnings
+- Basics of computer vision and hand tracking
+- Working with real-time systems
+- Translating physical gestures into digital actions
+
+---
+
+## 🙌 Acknowledgment
+This project was built as part of learning computer vision and gesture-based interaction systems.
