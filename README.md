@@ -29,12 +29,6 @@ This project uses computer vision to track hand movements in real-time and conve
 - PyAutoGUI
 
 ---
-
-## 🎥 Demo
-(Add a short demo video or GIF here)
-
----
-
 ## 🚧 Challenges Faced
 - Mapping camera coordinates to screen space accurately
 - Reducing jitter for smoother cursor movement
@@ -65,12 +59,4 @@ This project uses computer vision to track hand movements in real-time and conve
 Make sure to change ppt path!
 ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"
 
-## 💡 Learnings
-- Basics of computer vision and hand tracking
-- Working with real-time systems
-- Translating physical gestures into digital actions
 
----
-
-## 🙌 Acknowledgment
-This project was built as part of learning computer vision and gesture-based interaction systems.
