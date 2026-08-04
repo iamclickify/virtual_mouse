@@ -6,15 +6,15 @@ This project uses computer vision to track hand movements in real-time and conve
 
 ---
 
-## 📌 Features
-- 🖐️ Real-time hand tracking
-- 🖱️ Move cursor using finger movement
-- 👆 Perform click actions using gestures
-- ⚡ Smooth and responsive interaction
+##  Features
+-  Real-time hand tracking
+-  Move cursor using finger movement
+-  Perform click actions using gestures
+-  Smooth and responsive interaction
 
 ---
 
-## 🧠 How it Works
+## How it Works
 - Uses a webcam to capture live video feed
 - Detects hand landmarks using a hand tracking model
 - Maps finger positions to screen coordinates
@@ -22,21 +22,21 @@ This project uses computer vision to track hand movements in real-time and conve
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 - Python
 - OpenCV
 - MediaPipe
 - PyAutoGUI
 
 ---
-## 🚧 Challenges Faced
+##  Challenges Faced
 - Mapping camera coordinates to screen space accurately
 - Reducing jitter for smoother cursor movement
 - Handling different lighting conditions for reliable detection
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 - Add gesture-based volume/brightness control
 - Improve tracking accuracy
 - Add multi-hand support
@@ -44,7 +44,7 @@ This project uses computer vision to track hand movements in real-time and conve
 
 ---
 
-## 📂 How to Run
+##  How to Run
 1. Clone the repository
 2. Install dependencies:
    ```bash
