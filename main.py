@@ -61,19 +61,31 @@ def listen_for_presentation():
             speak("Speech service unavailable.")
             break
 
+import tkinter as tk
+from tkinter import filedialog
+
 # ======================
 #  Open PowerPoint
 # ======================
 def open_ppt():
-    ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"  
-    if os.path.exists(ppt_path):
+    speak("Please select your PowerPoint presentation file.")
+    root = tk.Tk()
+    root.withdraw()  # Hide the main root window
+    root.attributes("-topmost", True)  # Bring the file dialog to the front
+    
+    ppt_path = filedialog.askopenfilename(
+        title="Select PowerPoint Presentation",
+        filetypes=[("PowerPoint Files", "*.pptx *.ppt *.ppsx *.pptm"), ("All Files", "*.*")]
+    )
+    
+    if ppt_path and os.path.exists(ppt_path):
         os.startfile(ppt_path)
         speak("Opening your presentation.")
         time.sleep(5)
         speak("You can now use your hand to turn slides.")
         return True
     else:
-        speak("Presentation file not found.")
+        speak("No file was selected or the file does not exist.")
         return False
 
 # ======================

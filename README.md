@@ -48,15 +48,12 @@ This project uses computer vision to track hand movements in real-time and conve
 1. Clone the repository
 2. Install dependencies:
    ```bash
-   pip install opencv-python mediapipe pyautogui
+   pip install -r requirements.txt
    ```
 3. Run the script:
    ```bash
    python main.py
    ```
 
----
-Make sure to change ppt path!
-ppt_path = r"C:\Users\admin\OneDrive\Documents\virtual_mouse.pptx"
 
 
